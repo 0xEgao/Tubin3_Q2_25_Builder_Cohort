@@ -14,8 +14,4 @@ declare_id!("BPBKb4ogsKGbF4RGZTj3urRWemC584WT4gESJacNBzF4");
 #[program]
 pub mod ecomint {
     use super::*;
-
-    pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
-        initialize::handler(ctx)
-    }
 }

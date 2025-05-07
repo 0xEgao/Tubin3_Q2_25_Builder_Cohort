@@ -4,4 +4,8 @@ use anchor_lang::prelude::*;
 pub enum ErrorCode {
     #[msg("Custom error message")]
     CustomError,
+    #[msg("Zero value error")]
+    ValueZero,
+    #[msg("Carbon offset can't be zero")]
+    OffsetZero,
 }
