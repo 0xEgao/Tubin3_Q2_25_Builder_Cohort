@@ -10,4 +10,6 @@ pub enum ErrorCode {
     OffsetZero,
     #[msg("This is already listed")]
     AlreadyListed,
+    #[msg("This is not listed,can't delist")]
+    NotListed,
 }

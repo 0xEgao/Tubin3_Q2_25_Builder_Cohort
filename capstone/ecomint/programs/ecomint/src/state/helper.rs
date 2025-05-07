@@ -67,3 +67,9 @@ pub enum Country {
     Sweden,
     Switzerland,
 }
+
+#[derive(AnchorDeserialize, AnchorSerialize)]
+pub struct Card {
+    pub name: String,
+    pub uri: String,
+}
