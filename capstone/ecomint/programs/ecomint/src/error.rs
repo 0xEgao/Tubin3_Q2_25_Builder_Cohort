@@ -8,4 +8,6 @@ pub enum ErrorCode {
     ValueZero,
     #[msg("Carbon offset can't be zero")]
     OffsetZero,
+    #[msg("This is already listed")]
+    AlreadyListed,
 }
