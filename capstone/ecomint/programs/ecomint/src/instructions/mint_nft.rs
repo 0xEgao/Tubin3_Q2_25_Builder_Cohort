@@ -1,5 +1,3 @@
-use std::io::Sink;
-
 use crate::error::ErrorCode;
 use crate::Card;
 use crate::Ecomint;
@@ -22,7 +20,7 @@ pub struct MintNft<'info> {
     #[account(
         mut,
         has_one=maker,
-        seeds=[b"ecomint",eco_mint.maker().key().as_ref()],
+        seeds=[b"ecomint",eco_mint.maker.key().as_ref()],
         bump=eco_mint.bump
     )]
     pub eco_mint: Account<'info, Ecomint>,

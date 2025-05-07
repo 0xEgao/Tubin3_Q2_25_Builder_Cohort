@@ -1,7 +1,6 @@
 use crate::error::ErrorCode;
-use crate::{ecomint, Ecomint};
+use crate::Ecomint;
 use anchor_lang::prelude::*;
-use anchor_spl::token::revoke;
 
 #[derive(Accounts)]
 pub struct List<'info> {

@@ -12,4 +12,8 @@ pub enum ErrorCode {
     AlreadyListed,
     #[msg("This is not listed,can't delist")]
     NotListed,
+    #[msg("Calculation overflow error")]
+    CalculationOverflow,
+    #[msg("Calculation underflow error")]
+    CalculationUnderflow,
 }
