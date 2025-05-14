@@ -1,5 +1,4 @@
 use anchor_lang::prelude::*;
-
 #[derive(AnchorSerialize, AnchorDeserialize, Clone, Debug)]
 pub enum SourceType {
     Solar,
@@ -67,7 +66,6 @@ pub enum Country {
     Sweden,
     Switzerland,
 }
-
 #[derive(AnchorDeserialize, AnchorSerialize)]
 pub struct Card {
     pub name: String,

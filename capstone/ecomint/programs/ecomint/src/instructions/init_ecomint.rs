@@ -15,7 +15,7 @@ pub struct InitializeEcomint<'info> {
         init,
         payer=maker,
         space=Ecomint::INIT_SPACE,
-        seeds=[b"ecomint",maker.key().as_ref()],
+        seeds=[b"ecomint",maker.to_account_info().key().as_ref()],
         bump
     )]
     pub eco_mint: Account<'info, Ecomint>,

@@ -16,11 +16,12 @@ impl Space for Ecomint {
     const INIT_SPACE: usize = 8+ //discriminator
     1+ //Country Enum
     1+ //Organisation Type
+    1+ //offset_value
     1+ //carbon offesetted
     32 + //pubkey of creator
     1 + //bump
     1 + //listed
-    4; //value
+    8; //value
 }
 
 #[account]

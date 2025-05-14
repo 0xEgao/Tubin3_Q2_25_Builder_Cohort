@@ -8,7 +8,7 @@ pub struct List<'info> {
     pub maker: Signer<'info>,
     #[account(
         mut,
-        seeds=[b"carbon_credit",maker.key().as_ref()],
+        seeds=[b"ecomint",maker.key().as_ref()],
         bump=eco_mint.bump
     )]
     pub eco_mint: Account<'info, Ecomint>,

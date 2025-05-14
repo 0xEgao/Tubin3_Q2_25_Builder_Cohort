@@ -5,12 +5,13 @@ use crate::Marketplace;
 
 use anchor_lang::prelude::*;
 use mpl_core::{instructions::CreateV2CpiBuilder, ID as MPL_CORE_ID};
-
+///CHECK: This is safe
 #[derive(Accounts)]
 pub struct MintNft<'info> {
     #[account(mut)]
     pub taker: Signer<'info>, //Buyer account
 
+    ///CHECK: this is safe
     #[account(
         mut,
         address=eco_mint.maker
@@ -37,6 +38,7 @@ pub struct MintNft<'info> {
     #[account(
         address=MPL_CORE_ID
     )]
+    /// CHECK: This is safe
     pub mpl_core_program: UncheckedAccount<'info>,
     pub system_program: Program<'info, System>,
 }
